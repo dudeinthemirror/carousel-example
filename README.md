@@ -5,8 +5,13 @@ Here is a small project that reproduces the issue. (created with `npx react-nati
 
 I have a carousel where each item is a card that has a title and a WebView. On Android, when attempting to scroll the web page loaded in the webview, the gesture handler of the Carousel gets fired instead most of the time. On iOS, everything works fine.
 
-Here is a gif with Android and iOS side by side showing the issue. The iOS build on the left works fine, but the Android build on the right shows that it's hard to scroll a webpage vertically without triggering the horizontal Carousel scroll.
+Here are gifs with showing the issue. The iOS build on the left works fine, but the Android build on the right shows that it's hard to scroll a webpage vertically without triggering the horizontal Carousel scroll.
 
+## iOS
+![carousel_example_ios](https://user-images.githubusercontent.com/981638/96618893-5be6c700-12ba-11eb-93ca-054a10bb346f.gif)
+
+## Android
+![carousel_example_android](https://user-images.githubusercontent.com/981638/96619591-373f1f00-12bb-11eb-85db-ae0cea3fee72.gif)
 
 # Initialize
 - clone the repo
