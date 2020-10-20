@@ -1,0 +1,40 @@
+{
+  "name": "CarouselExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "npx react-native start",
+    "lint": "npx eslint --ignore-path .gitignore './src/**/*.js'",
+    "lint:errors": "npx eslint --quiet --ignore-path .gitignore './src/**/*.js'",
+    "lint:file": "npx eslint --ignore-path .gitignore $1",
+    "lint:file-fix": "npx eslint --ignore-path .gitignore --fix $1",
+    "prettier:check": "npx prettier --check ./src/**/*.js",
+    "prettier:file": "npx prettier --write $1",
+    "test": "NODE_ENV=test npx jest"
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.0",
+    "react-native-snap-carousel": "4.0.0-beta.5",
+    "react-native-webview": "10.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.2",
+    "@babel/runtime": "7.6.2",
+    "@react-native-community/eslint-config": "0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-module-resolver": "0.17.0",
+    "eslint-plugin-react-app": "6.2.2",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
